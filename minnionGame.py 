@@ -1,0 +1,23 @@
+vovels = ['A', 'E', 'I', 'O', 'U']
+
+
+def minion_game(string):
+    # your code goes here
+    stuart, kevin = 0, 0
+    for i in range(len(string)):
+        if string[i] in vovels:
+
+            kevin += (len(string) - i)
+        else:
+            stuart += (len(string) - i)
+
+    if max(stuart,kevin) == stuart:
+        print("Stuart " + str(stuart))
+    else:
+        print ("Kevin "+  str(kevin))
+
+
+s = raw_input()
+minion_game(s)
+
+# BANANA
