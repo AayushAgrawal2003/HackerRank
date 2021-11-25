@@ -20,4 +20,4 @@ def minion_game(string):
 s = raw_input()
 minion_game(s)
 
-# BANANA
+# BANANa
